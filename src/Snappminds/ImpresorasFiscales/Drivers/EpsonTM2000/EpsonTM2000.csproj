@@ -40,6 +40,15 @@
     <Compile Include="Operations\Tickets\ImprimirTextoFiscalOperation.cs" />
     <Compile Include="Operations\Tickets\ImprimirItemOperation.cs" />
     <Compile Include="Operations\Tickets\PagoOperation.cs" />
+    <Compile Include="Operations\ControlFiscal\CierreJornadaOperation.cs" />
+    <Compile Include="Messages\ControlFiscal\CierreJornadaMessage.cs" />
+    <Compile Include="Messages\Message.cs" />
+    <Compile Include="Messages\ControlFiscal\CierreJornadaMessageFactory.cs" />
+    <Compile Include="Messages\IMessageFactory.cs" />
+    <Compile Include="Messages\EstadoFiscal.cs" />
+    <Compile Include="Messages\EstadoImpresora.cs" />
+    <Compile Include="Messages\GeneralMessageFactory.cs" />
+    <Compile Include="Messages\MessageFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -52,5 +61,8 @@
     <Folder Include="Drivers\" />
     <Folder Include="Operations\" />
     <Folder Include="Operations\Tickets\" />
+    <Folder Include="Operations\ControlFiscal\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Messages\ControlFiscal\" />
   </ItemGroup>
 </Project>

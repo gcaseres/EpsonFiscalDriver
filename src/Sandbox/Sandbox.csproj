@@ -41,5 +41,9 @@
       <Project>{A5C5650F-74FE-485F-9B8C-1B69A48044F6}</Project>
       <Name>EpsonTM2000</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Snappminds\ImpresorasFiscales\ImpresorasFiscales.csproj">
+      <Project>{9DEF437C-5D4E-4E53-BCA3-5C687061513B}</Project>
+      <Name>ImpresorasFiscales</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
