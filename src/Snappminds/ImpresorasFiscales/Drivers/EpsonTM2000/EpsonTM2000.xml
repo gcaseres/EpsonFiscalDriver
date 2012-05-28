@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>D:\Proyectos\Snappminds\ImpresorasFiscales\bin\Debug\EpsonTM2000</name>
+    </assembly>
+    <members>
+        <member name="T:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver">
+            <summary>
+            Conexion con una impresora fiscal.
+            </summary>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.Send(System.Byte[])">
+            <summary>
+            Envia un frame de datos a la impresora fiscal.
+            Los datos a enviar no deben poseer registros de encabezado, solo de datos.
+            </summary>
+            <param name="datos">
+            Datos a enviar.
+            </param>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.GenerateCheckSum(System.Byte[])">
+            <summary>
+            Calcula el checksum del frame de datos.
+            </summary>
+            <returns>
+            Checksum del frame de datos.
+            </returns>
+            <param name="data">
+            Frame de datos.
+            </param>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.OnSerialPortDataReceived">
+            <summary>
+            Se produce cuando el puerto recibe informacion.
+            </summary>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.ProcessCheckSum">
+            <summary>
+            Lee, procesa, y devuelve el valor del checksum a partir del puerto.
+            </summary>
+            <returns>
+            El checksum leido.
+            </returns>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.ProcessFrame">
+            <summary>
+            Procesa, valida y devuelve los datos contenidos en un frame.
+            </summary>
+            <returns>
+            El frame de datos.
+            </returns>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.SendTimeOut_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            EventHandler para el evento Elapsed del timer de timeout de envio/recepcion.
+            </summary>
+            <param name="sender">
+            Timer que genero el evento.
+            </param>
+            <param name="e">
+            Argumentos del evento.
+            </param>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.Port_ErrorReceived(System.Object,System.IO.Ports.SerialErrorReceivedEventArgs)">
+            <summary>
+            EventHandler para el evento de errores del puerto serie.
+            TODO: Chequear que no existan problemas de concurrencia.
+            </summary>
+            <param name="sender">
+            Puerto que genero el evento.
+            </param>
+            <param name="e">
+            Argumentos del evento.
+            </param>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.Driver.SerialPortReadPolling">
+            <summary>
+            Se realiza polling para comprobar que haya informacion en el buffer de entrada.
+            En MONO no funciona el uso de eventos para recepcion de datos.
+            Este metodo se ejecuta en un thread aparte.
+            </summary>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.EpsonTM2000.Operations.Operation.GetBytes">
+            <summary>
+            Obtiene la operacion en formato de bytes para ser enviada
+            a la impresora fiscal.
+            Para modificar la cadena de bytes se recomienda redefinir <see cref="M:Snappminds.ImpresorasFiscales.EpsonTM2000.Operations.Operation.GenerateBytes" /></summary>
+            <returns>
+            Cadena de bytes para ser enviada a la impresora fiscal.
+            </returns>
+        </member>
+        <member name="M:Snappminds.ImpresorasFiscales.EpsonTM2000.Operations.Operation.GenerateBytes">
+            <summary cref="Snappminds.ImpresorasFiscales.EpsonTM2000.Operations.Operation.GenerateBytes ">
+            Generates the bytes.
+            </summary>
+            <returns>
+            The bytes.
+            </returns>
+        </member>
+        <member name="T:Snappminds.ImpresorasFiscales.Drivers.EpsonTM2000.OperationsTickets.AbrirOperation">
+            <summary>
+            Operacion de impresora fiscal.
+            Abrir Comprobante Ticket Fiscal.
+            </summary>
+        </member>
+    </members>
+</doc>

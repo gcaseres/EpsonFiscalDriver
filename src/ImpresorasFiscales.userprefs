@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 2.10.8" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sandbox\Main.cs">
+    <Files>
+      <File FileName="Sandbox\Main.cs" Line="50" Column="11" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Drivers\Driver.cs" Line="518" Column="6" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Tickets\ImprimirItemOperation.cs" Line="83" Column="83" />
+      <File FileName="Sandbox\AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Tickets\ImprimirTextoFiscalOperation.cs" Line="1" Column="1" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Tickets\CerrarOperation.cs" Line="17" Column="4" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Tickets\AbrirOperation.cs" Line="11" Column="13" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Tickets\PagoOperation.cs" Line="7" Column="17" />
+      <File FileName="Snappminds\ImpresorasFiscales\Drivers\EpsonTM2000\Operations\Operation.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
